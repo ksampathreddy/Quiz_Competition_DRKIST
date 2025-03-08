@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRKIST - TECHTREK 2K25</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../images/drk.png">
+    <link rel="icon" type="image/x-icon" href="images/drk.png">
 </head>
 <body>
-    <img src="../images/d.png" alt="Logo" class="logo" />
-    <h2>TECHTREK 2K25</h2>
-    <h3>Quiz Competition</h3>
-    <h5>Stage 1</h5>
-    <button class="quiz-button" onclick="openQuiz()">Take the Quiz</button>
-   
-    <script>
-        function openQuiz() {
-            window.open("https://forms.gle/5Hta7ESDDmF3c8MA7");
-        }
-    </script>
-
-    <button class="quiz-butto" onclick="openFeedback()">Feedback</button>
-   
-    <script>
-        function openFeedback() {
-            window.open("https://forms.gle/iD8DAoUHBcUfbnU17");
-        }
-    </script>
+    <img src="images/d.png" alt="Logo" class="logo" />
+    
+    <div class="container">
+        <h2>TECHTREK 2K25</h2>
+        <h3>Quiz Competition</h3>
+        <h5>Stage 1</h5>
+        <button class="quiz-button" onclick="openQuiz()">Take the Quiz</button>
+        <button class="quiz-butto" onclick="openFeedback()">Feedback</button>
+    </div>
     
     <div class="sam">
         <p class="copyright">&copy; 2004 By DRKIST All rights reserved.</p>
     </div>
+
+    <script>
+        function openQuiz() {
+            window.open("https://forms.gle/5Hta7ESDDmF3c8MA7");
+        }
+        function openFeedback() {
+            window.open("https://forms.gle/iD8DAoUHBcUfbnU17");
+        }
+    </script>
 </body>
 </html>

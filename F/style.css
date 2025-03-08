@@ -5,114 +5,139 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background: url('../images/c1.png') no-repeat center center/cover;
-    position: relative;
+}
+
+/* Container for central content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Logo Styling */
 .logo {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 400px;
-    height: 80px;
+    top: 10px;
+    left: 10px;
+    width: 45vw; /* Responsive width */
+    max-width: 400px;
+    height: auto;
 }
+
 /* Main Heading */
 h2 {
-    position: absolute;
-    top: 150px; /* Adjust the value as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    color:blue;
-    font-size: 75px;
+    font-size: 6vw; /* Adjusts with screen width */
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 0;
+    margin: 20px 0;
+    color: blue;
 }
 
-/* Styling for h3 and h5 to appear side by side */
-h3, h5 {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    padding: 5px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Styling for h3 */
+/* Styling for h3 and h5 */
 h3 {
     color: green;
-    font-size: 50px;
-    margin-right: 10px; /* Space between h3 and h5 */
+    font-size: 4vw;
+    margin: 10px 0;
 }
 
-/* Styling for h5 */
 h5 {
-    color:orchid; /* Change to any color you prefer */
-    font-size: 25px;
-}
-
-
-
-/* Subheading */
-h1 {
-    color: black;
-    font-size: 50px;
-    margin: 10px;
+    color:yellow;
+    font-size: 2vw;
+    margin-bottom: 20px;
 }
 
 /* Button Styling */
 .quiz-button, .quiz-butto {
-    font-size: 20px;
-    padding: 15px 30px;
+    font-size: 1.2rem;
+    padding: 12px 25px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 20px;
+    margin: 10px;
     transition: all 0.3s ease-in-out;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .quiz-button {
-    background: white;
-    color: #000;
+    background: pink;
+    color: black;
 }
 
 .quiz-butto {
     background: yellowgreen;
-    color: #000;
+    color: black;
 }
 
 .quiz-button:hover {
     background: #ff9900;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .quiz-butto:hover {
     background: #4caf50;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Footer Section */
 .sam {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     width: 100%;
     text-align: center;
 }
 
 .copyright {
-    font-size: 12px;
+    font-size: 0.9rem;
     font-weight: bold;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 5px 15px;
     border-radius: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 5vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }
+    h5 {
+        font-size: 2.5vw;
+    }
+    .quiz-button, .quiz-butto {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .logo {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 8vw;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    h5 {
+        font-size: 3vw;
+    }
+    .quiz-button, .quiz-butto {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    .logo {
+        width: 40vw;
+    }
 }
