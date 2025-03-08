@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url('c.png') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 400px;
+    height: 80px;
+}
+/* Main Heading */
+h2 {
+    position: absolute;
+    top: 150px; /* Adjust the value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color:blue;
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Styling for h3 and h5 to appear side by side */
+h3, h5 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for h3 */
+h3 {
+    color: green;
+    font-size: 50px;
+    margin-right: 10px; /* Space between h3 and h5 */
+}
+
+/* Styling for h5 */
+h5 {
+    color: cyan; /* Change to any color you prefer */
+    font-size: 25px;
+}
+
+
+
+/* Subheading */
+h1 {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+}
+
+/* Button Styling */
+.quiz-button, .quiz-butto {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-button {
+    background: white;
+    color: #000;
+}
+
+.quiz-butto {
+    background: yellowgreen;
+    color: #000;
+}
+
+.quiz-button:hover {
+    background: #ff9900;
+    transform: scale(1.1);
+}
+
+.quiz-butto:hover {
+    background: #4caf50;
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+.sam {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
